@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    font-family: "Comfortaa" , "Tajawal", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --blue: #08f;
+    --orange: #f70;
+    --white: #fff;
+    --black: #212121;
+    --gray: #999;
+}
+
+
+body{
+    background-color: var(--black);
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*navbar*/
+header{
+    background-color: var(--blue);
+    position: fixed;
+    width: 100%;
+    z-index: 999; 
+    padding: 10px 50px;
+}
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+.logo{
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: var(--white);
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+.logo p {
+    color :var(--blue) ;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    background-color: var(--blue);
+}
+.logo:hover p{
+    color: var(--white);
+}
+.color{
+    color: var(--orange);
+}
+.nav a{
+    margin: 0 15px;
+    color: var(--white);
+    font-size: 1.3em;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav a:hover{
+    color: var(--orange);
+}
+/*navbar*/
+/*scroll bar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #c4c4c4;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--orange);
+}
+/*scroll bar*/
+/*main*/
+section{
+    text-align: center;
+}
+.main{
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(imgs/Tllogo.png) no-repeat;
+    background-size:100vh;
+    background-position: center;
+}
+.main h2{
+    color: var(--blue);
+    font-size: 1.5em;
+    font-weight: 500; 
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 25px;
+    color: var(--orange);
+    font-size: 3em;
+    font-weight: 500;
+}
+.main h3{
+    color: var(--blue);
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn button{
+    color: var(--white);
+    border: none;
+    background-color: var(--blue);
+    font-size: 1.1em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-bottom:30px ;
+    box-shadow: 0 5px 25px #01010180;
+    transition: 0.4s ease;
+}
+
+.about .main-btn button{
+    margin: 0;
+    font-weight: 600;
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.main-btn button:hover{
+    transform: scale(1.05);
+    letter-spacing: 1.5px;
+    background-color: var(--orange);
+    color: var(--white);
+}
+.social-ico{
+    padding-left: 32px;
+    
+}
+.social-ico a{
+    color: var(--blue);
+    font-size: 1.9em;
+    padding-right: 30px;
+}
+.social-ico .io{ transition: 0.2s ease;}
+.social-ico .you{ transition: 0.2s ease;}
+.social-ico .insta{ transition: 0.2s ease;}
+.social-ico .dis{ transition: 0.2s ease;}
+.social-ico .io:hover{
+    color: var(--orange);
+}
+.social-ico .you:hover{
+    color: var(--orange);
+}
+.social-ico .insta:hover{
+    color: var(--orange);
+}
+.social-ico .dis:hover{
+    color: var(--orange);
+}
+/*main*/
+/*about*/
+.about{ 
+    display: inline-block;
+    background-color: var(--blue);
+    width: 100%;
+    border-radius: 10px;
+    min-height: 10vh;
+    padding: 50px 100px;
+}
+.about .container h2{
+    margin-bottom: 40px;
+    color: var(--white);
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.about .container h3{
+    line-height: 35px;
+    color: var(--white);
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.about span{
+    color: var(--orange);
+}
+/*about*/
+/*services*/
+.cards{
+    background-color: var(--black);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 2.5em;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.content{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.card{
+    background-color: var(--blue);
+    width: 100%;
+    box-shadow: 0 5px 25px rgba(0.5 0.5 0.5 /50%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.icon{
+    font-size: 5em;
+    text-align: center;
+}
+.info h3{
+    color: var(--orange);
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info p{
+    font-size: 1.1em;
+}
+/*services*/
+/*projects*/
+.projects{
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+.projects .title{
+    color: var(--white);
+    margin-bottom: 30px;
+}
+#title{
+    color: var(--orange);
+    font-size: 1.5em;
+    margin: 2px 0;
+    padding: 0;
+}
+.pro-card{
+    color: #000;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 50%);
+    width: 100%;
+    overflow: hidden;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+.pro-card:hover{
+    transform: scale(1.05);
+}
+
+.pro-img img{
+    width: 100%;
+}
+.pro-info{
+    padding: 0.6em 1em;
+}
+.pro-category{
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+.pro-title{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.more{
+    color: var(--blue);
+    transition: 0.3s ease;
+}
+.more:hover{
+    transform: scale(1.05);
+    color: var(--orange);
+}
+#proT{
+    font-size: 0.85em;
+    font-weight: 800;
+}
+/*projects*/
+/*thanks*/
+.thnx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 50px;
+}
+.thnx span{
+    color: var(--orange);
+}
+/*thanks*/
+/*footer*/
+.footer{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    z-index: 2;
+}
+.footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+.footer-title{
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--white);
+}
+.footer span{
+    color: var(--orange);
+}
+.footer .social-ico a{
+    color: var(--white);
+    font-size: 1.5em;
+    padding: 0px 7px;
+}
+/*footer*/
+/*responsivness*/
+@media (max-width: 768px) {
+    header .nav{
+        display: block;
+        text-align: center;
+    }
+    
+    .content{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 20em;
+    }
+    .pro-card{
+        width: 20em;
+    }
+
+    header .nav ul{
+        margin-top: 20px;
+    }
+    header .nav ul a{
+        margin: 0px 8px;
+    }
+    .main h2 span{
+        font-size: 2em;
+    }
+    .main h3{
+        font-size: 1.5em;
+    }
+    .about{
+        padding: 50px 20px;
+        min-height: 20vh;
+    }
+    .about .container h3{
+        font-size: 1em;
+        line-height: 30px;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .footer-title{
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 425px) {
+    header{
+        padding: 10px 40px;
+    }
+    header .nav ul a {
+        font-size: 0.9em;
+        margin: 0 5px;
+    }
+    .main h2 span{
+        font-size: 1.5em;
+    }
+    .main h3{
+        font-size: 1em;
+    }
+    .main-btn button{
+        font-size: 1em;
+    }
+    .about{
+        padding: 50px 10px;
+        min-height: 5vh;
+    }
+    .about .container h3{
+        font-size: 0.8em;
+        line-height: 20px;
+    }
+    .footer .social-ico a{
+        font-size: 0.9em;
+        padding: 2px;
+    }
+    .footer-title{
+        font-size: 0.6em;
+    }    
+}
+@media (max-width: 320px) {
+    header .nav ul a {
+        font-size: 0.8em;
+        margin: 0 4px;
+    }
+    .social-ico a{
+        font-size: 1.7em;
+        padding-right: 20px;
+    }
+    .main-btn button{
+        font-size: 0.9em;
+    }
+    .footer-title{
+        font-size: 0.45em;
+    }   
+}
+
+/*make by Barmajeem برمجيم*/
