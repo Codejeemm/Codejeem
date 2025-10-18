@@ -103,6 +103,7 @@ section{
     flex-wrap: wrap;
     width: 100%;
     min-height: 100vh;
+    padding-top: 70px;
 }
 .main h2{
     color: var(--blueB);
@@ -129,7 +130,6 @@ section{
 }
 .social-ico{
     padding-left: 32px;
-    
 }
 .social-ico a{
     color: var(--blueB);
@@ -333,14 +333,12 @@ nav img{
     .content{
         flex-wrap: wrap;
     }
-
     .card{
         width: 20em;
     }
     .pro-card{
         width: 20em;
     }
-
     header .nav ul{
         margin-top: 10px;
     }
@@ -406,9 +404,19 @@ nav img{
         margin: 0px 1px;
     }
 }
-@media (max-width: 321px) {
-    .main h2{
+@media (max-width: 350px) {
+    .nav ul a {
         font-size: 1em;
+        margin: 0 10px;
+    }
+    .main h2{
+        font-size: 0.8em;
+    }
+    .main h3{
+        font-size: 0.8em;
+    }
+    .main .imgpart img{
+        width: 200px;
     }
     .social-ico a{
         font-size: 1.5em;
