@@ -26,10 +26,11 @@
     background-color: rgb(222, 219, 218);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--blueB);
+    background-image: linear-gradient(var(--blue) , var(--blueB) 70%);
+    border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: var(--orange);
+    background-image: linear-gradient(var(--orange) , var(--orangeB) 70%);
 }
 /*scroll bar*/
 
@@ -48,15 +49,16 @@ a{    text-decoration: none;
     color: var(--orange);
 }
 
+.title i{
+    color: var(--blue);
+}
 
 /*navbar*/
 header{
-    box-shadow: 0 0 10px #000;
-    background-color: var(--white);
     position: fixed;
     width: 100%;
     z-index: 999; 
-    padding: 10px 50px;
+    padding: 25px 50px;
 }
 header .nav{
     display: flex;
@@ -64,6 +66,10 @@ header .nav{
     align-items: center;
     max-width: 1300px;
     margin: auto;
+    border-radius: 10px;
+    background-color: var(--white);
+    opacity: 90%;
+    box-shadow: 0 0 10px #0000003c;
 }
 .logo{
     padding: 8px 16px;
@@ -77,7 +83,7 @@ header .nav{
     color: var(--orange);
 }
 .nav a{
-    margin: 0 20px;
+    margin: 0px 20px;
     color: var(--blueB);
     font-size: 1.5em;
     font-weight: 600;
@@ -162,8 +168,7 @@ section{
     margin: auto;
     width: 100%;
     min-height: 10vh;
-    padding: 50px 20px;
-    padding-top: 100px;
+    padding: 0px 20px;
     max-width: 1300px;
 }
 .about .back{
@@ -171,11 +176,10 @@ section{
     justify-content: center;
     text-align: center;
     padding: 20px;
-    border-radius: 20px;
-    background-color: var(--blueB);
+    border-radius: 10px;
+    background-image: linear-gradient(var(--blue) , var(--blueB) 70%);
 }
 .about .container h2{
-    margin-bottom: 40px;
     color: var(--blueB);
     font-size: 3.5em;
     font-weight: 600;
@@ -202,16 +206,15 @@ section{
     font-size: 1.1em;
     font-weight: 500;
     display: inline-block;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
     letter-spacing: 1px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 20px;
-    box-shadow: 0 0px 20px rgba(251, 247, 246, 0.495);
+    box-shadow: 0 0 10px #0000003c;
     transition: 0.3s ease;
 }
 .main-btn button:hover{
     transform: scale(1.05);
-    letter-spacing: 1.5px;
     background-color: var(--orange);
     color: var(--white);
 }
@@ -227,7 +230,7 @@ section{
     font-size: 3em;
     font-weight: 600;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 .content{
     color: var(--white);
@@ -240,10 +243,10 @@ section{
     padding-bottom: 10px;
 }
 #design .card{
-    background-color: var(--orange);
+    background-image: linear-gradient(var(--orange) , var(--orangeB) 70%);
 }
 .card{
-    background-color: var(--blueB);
+    background-image: linear-gradient(var(--blue) , var(--blueB) 70%);
     width: 100%;
     box-shadow: 0 0px 5px #000;
     border-radius: 10px;
@@ -252,7 +255,7 @@ section{
     transition: 0.3s ease;
 }
 .card:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 .icon{
     font-size: 5em;
@@ -323,6 +326,9 @@ nav img{
 /*footer*/
 /*responsivness*/
 @media (max-width: 780px) {
+    .nav{
+        padding-bottom:  5px;
+    }
     header .nav{
         display: block;
         text-align: center;
@@ -343,7 +349,7 @@ nav img{
         margin-top: 10px;
     }
     header .nav ul a{
-        margin: 0px 8px;
+        margin: 8px;
     }
     .main{
         padding-top: 200px;
@@ -371,6 +377,7 @@ nav img{
     header{
         padding: 10px 40px;
     }
+    
     .nav ul a {
         font-size: 1.5em;
         margin: 0 10px;
@@ -404,10 +411,13 @@ nav img{
         margin: 0px 1px;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 376px) {
+    .nav{
+        padding-bottom:  5px;
+    }
     .nav ul a {
         font-size: 1em;
-        margin: 0 10px;
+        margin: 10px;
     }
     .main h2{
         font-size: 0.8em;
